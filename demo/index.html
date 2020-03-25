@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div id="app">
+        <!-- 背景图片 -->
+        <div alt="" :style="transform" class="bgImg"></div>
+        <!-- 船 -->
+        <div class="ship" @click="next">
+            <img src="img/chuang.png" alt="">
+            <img src="img/bolang1.png" alt="">
+        </div>
+        <!-- 背景音乐 -->
+        <img src="img/audio1.png" alt="" :class="isPlay?'audio play':'audio'" @click="audiosCtrl">
+        <audio src="audio/audio.mp3" autoplay loop class="none"></audio>
+        <div class="pageBox">
+            <div class="page1">
+                <img src="img/logo.png" alt="" class="logo">
+                <img src="img/flower.png" alt="" class="leaf">
+                <img src="img/page1_fl.png" alt="" class="flower">
+                <img src="img/page1_bird.png" alt="" class="bird">
+                <img src="img/page1_font1.png" alt="" class="title">
+                <div class="content">
+                    <img src="img/page1_font2.png" alt="">
+                </div>
+                <img src="img/page1_yun1.png" alt="" class="cloud1">
+                <img src="img/page1_yun2.png" alt="" class="cloud2">
+                <p class="next">踏青前行</p>
+            </div>
+            <div class="page2"></div>
+            <div class="page3">
+                
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/vue.min.js"></script>
+<script src="js/index.js"></script>
+</html>
